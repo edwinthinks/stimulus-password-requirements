@@ -13,4 +13,3 @@ A simple deployment to [Netlify](https://www.netlify.com/) was sufficient and ea
 # Testing
 
 Tests were built using [Jest](https://jestjs.io/) and applies information provided [here by Hrvoje Šimić](https://shime.sh/testing-stimulus).
-

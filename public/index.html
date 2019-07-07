@@ -1,12 +1,62 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/bundle.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <script src="bundle.js" async></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bundle.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="bundle.js" async></script>
+  </head>
   <body>
-    <h1>Start</h1>
+
+    <div class="hero is-full-width">
+      <div class="hero-body container">
+        <h1 class="title has-text-centered"> Stimulus Password Input Demo </h1>
+
+        <div data-controller="password-input" class="box">
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Password</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="password" data-action="input->password-input#input"></input>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="password-complexity-hint">
+            <ul class="password-requirements">
+              <li data-target="password-input.length" class="password-requirements__requirement">
+                Minimum of 8 characters
+              </li>
+              <li data-target="password-input.lowercaseLetter" class="password-requirements__requirement">
+                At least one lowercase letter
+              </li>
+              <li data-target="password-input.uppercaseLetter" class="password-requirements__requirement">
+                At lease one uppercase letter
+              </li>
+              <li data-target="password-input.number" class="password-requirements__requirement">
+                At least one number
+              </li>
+              <li data-target="password-input.identical" class="password-requirements__requirement">
+                Can't contain more than two consecutive identical characters. Ex. aaa or 111
+              </li>
+              <li data-target="password-input.sequential" class="password-requirements__requirement">
+                Can't contain more than two consecutive sequential characters. Ex. abc or 123
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container has-text-centered">
+      Powered By <a href="https://github.com/stimulusjs/stimulus">Stimulus</a>,
+      <a href="https://bulma.io/">Bulma</a>,
+      and <a href="https://edwinthinks.com/">myself (Edwin)</a>
+    </div>
+
   </body>
 </html>

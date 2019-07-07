@@ -1,2 +1,21 @@
 @charset "utf-8";
 @import "~bulma/bulma";
+
+.password-requirements {
+
+  .password-requirements__requirement {
+    color: green;
+
+    &:before {
+      content: "✓";
+    }
+
+    &.invalid {
+      color: red;
+
+      &:before {
+        content: 'X';
+      }
+    }
+  }
+}
