@@ -15,7 +15,6 @@ class PasswordInputController extends Controller {
   }
 
   input(event) {
-    console.log(event);
     this.password = event.target.value;
   }
 
