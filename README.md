@@ -3,7 +3,7 @@
 
 A implementation of an interactive password input field with requirements using of [StimulusJS](https://stimulusjs.org/). Built for the purposes of learning how to apply Stimulus in applicable scenarios were 'sprinkling' is suitable.
 
-[Demo video of password input field](demo.gif)
+![Demo video of password input field](demo.gif)
 
 You can try out the application here: [https://stimulus-password-requirements.netlify.com/](https://stimulus-password-requirements.netlify.com/)
 
