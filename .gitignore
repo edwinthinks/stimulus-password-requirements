@@ -1,3 +1,4 @@
 node_modules/
 public/bundle.*
+public/css/bundle.*
 
